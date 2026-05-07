@@ -1,10 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { LandingPage } from "@/components/landing/landing-page";
 
-export default function page()  {
-  return (
-    <div>
-      <h1>Nexaali Agency</h1>
-      <Button variant={`destructive`}>Primary Button</Button>
-    </div>
-  );
-};
+export default function Page() {
+  return <LandingPage />;
+}

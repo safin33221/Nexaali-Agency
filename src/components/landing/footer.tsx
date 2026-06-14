@@ -86,7 +86,7 @@ export function Footer() {
         </div>
 
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-sm text-gray-500 md:flex-row">
-          <p>© {new Date().getFullYear()} Nexaali Agency. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Softilo Agency. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="#top" className="transition-colors hover:text-white">
               Privacy Policy

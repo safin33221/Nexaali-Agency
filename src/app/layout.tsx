@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Nexaali Agency",
+  title: "Softilo Agency",
   description: "Premium branding, web design, and digital growth for modern businesses.",
 };
 

@@ -1,7 +1,6 @@
 'use client'
 
 import { CTA } from "@/components/landing/cta";
-import { CursorGlow } from "@/components/landing/cursor-glow";
 import { Footer } from "@/components/landing/footer";
 import { Hero } from "@/components/landing/hero";
 import { Industries } from "@/components/landing/industries";
@@ -21,7 +20,7 @@ export function LandingPage() {
       className="relative min-h-screen overflow-x-clip bg-background text-white"
     >
       <div className="hidden lg:block">
-        <CursorGlow />
+        {/* <CursorGlow /> */}
       </div>
 
       <Navbar />
@@ -33,6 +32,7 @@ export function LandingPage() {
         <Services />
         <Industries />
         <Packages />
+        {/* <AdditionalServices /> */}
         <WhyChooseUs />
         <Portfolio />
         <Testimonials />

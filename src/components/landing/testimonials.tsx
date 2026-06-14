@@ -8,7 +8,7 @@ const testimonials = [
     role: "CMO, Nova Schools",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=150&auto=format&fit=crop",
-    text: "Nexaali completely transformed our digital presence. Enrollments are up 40% since they took over our branding and social campaigns.",
+    text: "Softilo completely transformed our digital presence. Enrollments are up 40% since they took over our branding and social campaigns.",
   },
   {
     name: "David Chen",

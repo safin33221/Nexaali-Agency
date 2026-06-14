@@ -19,7 +19,7 @@ export function WhyChooseUs() {
             viewport={{ once: true }}
             className="font-display mb-6 text-5xl font-bold md:text-6xl"
           >
-            The Nexaali <span className="text-gradient-accent">Advantage</span>
+            The Softilo <span className="text-gradient-accent">Advantage</span>
           </motion.h2>
         </div>
 

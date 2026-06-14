@@ -41,7 +41,7 @@ export function Navbar() {
           href="#top"
           className="font-display text-2xl font-bold tracking-tighter text-white"
         >
-          NEXAALI<span className="text-accent-blue">.</span>
+          SOFTILO<span className="text-accent-blue">.</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

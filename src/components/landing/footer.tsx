@@ -8,7 +8,7 @@ export function Footer() {
               href="#top"
               className="font-display mb-6 block text-3xl font-bold tracking-tighter text-white"
             >
-              NEXAALI<span className="text-accent-blue">.</span>
+              SOFTILO<span className="text-accent-blue">.</span>
             </a>
             <p className="max-w-sm leading-relaxed text-gray-400">
               A premium creative branding &amp; digital growth agency helping
@@ -47,10 +47,10 @@ export function Footer() {
             <ul className="space-y-4 text-gray-400">
               <li>
                 <a
-                  href="mailto:hello@nexaali.com"
+                  href="mailto:hello@softilo.com"
                   className="transition-colors hover:text-white"
                 >
-                  hello@nexaali.com
+                  hello@softilo.com
                 </a>
               </li>
               <li>

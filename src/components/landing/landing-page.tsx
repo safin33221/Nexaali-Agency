@@ -10,6 +10,7 @@ import { Packages } from "@/components/landing/packages";
 import { Portfolio } from "@/components/landing/portfolio";
 import { Services } from "@/components/landing/services";
 import { Stats } from "@/components/landing/stats";
+import { Team } from "@/components/landing/team";
 import { Testimonials } from "@/components/landing/testimonials";
 import { WhyChooseUs } from "@/components/landing/why-choose-us";
 
@@ -35,6 +36,7 @@ export function LandingPage() {
         {/* <AdditionalServices /> */}
         <WhyChooseUs />
         <Portfolio />
+        <Team />
         <Testimonials />
         <CTA />
       </main>

@@ -57,15 +57,18 @@ export function Portfolio() {
               A glimpse into our premium digital transformations.
             </motion.p>
           </div>
-          <motion.a
+          <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            href="#cta"
-            className="flex w-fit items-center gap-2 rounded-full border border-white/20 px-6 py-3 transition-colors hover:bg-white hover:text-black"
           >
-            View All Projects <ArrowUpRight className="h-4 w-4" />
-          </motion.a>
+            <a
+              href="/portfolio"
+              className="flex w-fit items-center gap-2 rounded-full border border-white/20 px-6 py-3 transition-colors hover:bg-white hover:text-black"
+            >
+              View All Projects <ArrowUpRight className="h-4 w-4" />
+            </a>
+          </motion.div>
         </div>
 
         <div className="grid auto-rows-[300px] grid-cols-1 gap-6 md:grid-cols-3">

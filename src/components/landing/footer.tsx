@@ -1,15 +1,17 @@
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/5 bg-background pb-10 pt-20">
       <div className="mx-auto max-w-7xl px-6">
         <div className="mb-16 grid grid-cols-1 gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
-            <a
-              href="#top"
+            <Link
+              href="/"
               className="font-display mb-6 block text-3xl font-bold tracking-tighter text-white"
             >
               SOFTILO<span className="text-accent-blue">.</span>
-            </a>
+            </Link>
             <p className="max-w-sm leading-relaxed text-gray-400">
               A premium creative branding &amp; digital growth agency helping
               modern businesses dominate their market.
@@ -20,30 +22,30 @@ export function Footer() {
             <h4 className="mb-6 font-bold text-white">Quick Links</h4>
             <ul className="space-y-4 text-gray-400">
               <li>
-                <a href="#services" className="transition-colors hover:text-white">
+                <Link href="/#services" className="transition-colors hover:text-white">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#portfolio" className="transition-colors hover:text-white">
-                  Work
-                </a>
+                <Link href="/portfolio" className="transition-colors hover:text-white">
+                  Work &amp; Case Studies
+                </Link>
               </li>
               <li>
-                <a href="#packages" className="transition-colors hover:text-white">
-                  Pricing
-                </a>
+                <Link href="/#packages" className="transition-colors hover:text-white">
+                  Pricing Packages
+                </Link>
               </li>
               <li>
-                <a href="#why-us" className="transition-colors hover:text-white">
+                <Link href="/#why-us" className="transition-colors hover:text-white">
                   About Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="mb-6 font-bold text-white">Contact</h4>
+            <h4 className="mb-6 font-bold text-white">Contact &amp; Inquiries</h4>
             <ul className="space-y-4 text-gray-400">
               <li>
                 <a
@@ -54,32 +56,32 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#cta" className="transition-colors hover:text-white">
-                  WhatsApp Us
-                </a>
+                <Link href="/contact" className="transition-colors hover:text-white">
+                  Book a Consultation
+                </Link>
               </li>
               <li className="flex gap-4 pt-4">
-                <a
-                  href="#top"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10"
+                <Link
+                  href="/"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-xs font-semibold transition-colors hover:bg-white/10"
                 >
                   <span className="sr-only">X</span>
                   X
-                </a>
-                <a
-                  href="#top"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10"
+                </Link>
+                <Link
+                  href="/"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-xs font-semibold transition-colors hover:bg-white/10"
                 >
                   <span className="sr-only">Instagram</span>
                   In
-                </a>
-                <a
-                  href="#top"
-                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 transition-colors hover:bg-white/10"
+                </Link>
+                <Link
+                  href="/"
+                  className="flex h-10 w-10 items-center justify-center rounded-full bg-white/5 text-xs font-semibold transition-colors hover:bg-white/10"
                 >
                   <span className="sr-only">LinkedIn</span>
                   Li
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -88,12 +90,12 @@ export function Footer() {
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/5 pt-8 text-sm text-gray-500 md:flex-row">
           <p>© {new Date().getFullYear()} Softilo Agency. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#top" className="transition-colors hover:text-white">
+            <Link href="/" className="transition-colors hover:text-white">
               Privacy Policy
-            </a>
-            <a href="#top" className="transition-colors hover:text-white">
+            </Link>
+            <Link href="/" className="transition-colors hover:text-white">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

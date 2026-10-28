@@ -1,12 +1,13 @@
+import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const navLinks = [
-  { name: "Services", href: "#services" },
-  { name: "Work", href: "#portfolio" },
-  { name: "Packages", href: "#packages" },
-  { name: "About", href: "#why-us" },
+  { name: "Services", href: "/#services" },
+  { name: "Work", href: "/portfolio" },
+  { name: "Packages", href: "/#packages" },
+  { name: "About", href: "/#why-us" },
 ];
 
 export function Navbar() {
@@ -37,31 +38,31 @@ export function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6">
-        <a
-          href="#top"
+        <Link
+          href="/"
           className="font-display text-2xl font-bold tracking-tighter text-white"
         >
           SOFTILO<span className="text-accent-blue">.</span>
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           <div className="glass-card flex items-center gap-6 rounded-full px-6 py-2">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className="text-sm text-gray-300 transition-colors hover:text-white"
               >
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
-          <a
-            href="#cta"
+          <Link
+            href="/contact"
             className="rounded-full bg-white px-6 py-2.5 text-sm font-medium text-black transition-colors hover:bg-gray-200"
           >
             Let&apos;s Talk
-          </a>
+          </Link>
         </div>
 
         <button
@@ -81,22 +82,22 @@ export function Navbar() {
           className="absolute left-0 right-0 top-full flex flex-col gap-4 border-b border-white/10 bg-surface2 p-6 md:hidden"
         >
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="text-lg text-gray-300 transition-colors hover:text-white"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#cta"
+          <Link
+            href="/contact"
             className="mt-4 rounded-full bg-white px-6 py-3 text-center text-sm font-medium text-black"
             onClick={() => setMobileMenuOpen(false)}
           >
             Let&apos;s Talk
-          </a>
+          </Link>
         </motion.div>
       )}
     </motion.nav>

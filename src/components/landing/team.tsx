@@ -132,6 +132,9 @@ export function Team({ members = teamData }: TeamSectionProps) {
 }
 
 function TeamMemberCard({ member, index }: { member: TeamMember; index: number }) {
+  const hasSocialLinks = Boolean(
+    member.socialUrl.linkedin || member.socialUrl.github || member.socialUrl.twitter
+  );
   const [imgSrc, setImgSrc] = useState<string>(
     member.image || fallbackImages[member.id] || fallbackImages["1"]
   );
@@ -179,6 +182,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
 
           {/* Floating Glassmorphic Socials Pill (Slides Up on Hover) */}
           <div className="absolute bottom-3 left-3 right-3 z-10 flex items-center justify-between">
+            {hasSocialLinks && (
             <div className="flex items-center gap-1 rounded-full border border-white/10 bg-slate-950/85 px-2.5 py-1.5 backdrop-blur-xl shadow-xl transition-all duration-300 ease-out sm:translate-y-3 sm:opacity-0 group-hover:translate-y-0 group-hover:opacity-100">
               {member.socialUrl.linkedin && (
                 <a
@@ -216,6 +220,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
                 </a>
               )}
             </div>
+            )}
 
             {/* Micro-interaction Corner Accent Indicator — links to portfolio if available */}
             {member.portfolio ? (
@@ -224,7 +229,7 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={`${member.name}'s Portfolio`}
-                className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-slate-400 backdrop-blur-md shadow-md transition-all duration-300 group-hover:border-violet-500/40 group-hover:bg-violet-500/20 group-hover:text-violet-300 group-hover:rotate-45"
+                className="ml-auto flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-slate-400 backdrop-blur-md shadow-md transition-all duration-300 group-hover:border-violet-500/40 group-hover:bg-violet-500/20 group-hover:text-violet-300 group-hover:rotate-45"
               >
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </a>

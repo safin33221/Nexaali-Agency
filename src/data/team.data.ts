@@ -23,30 +23,35 @@ export const teamData: TeamMember[] = [
     socialUrl: {
       linkedin: "https://linkedin.com/in/safayethossansafin",
       github: "https://github.com/safin332211",
-      twitter: "https://x.com"
-    }
+      twitter: "https://x.com",
+    },
   },
+
   {
     id: "2",
-    name: "Tanvir Ahmed",
-    role: "Lead Full-Stack Engineer",
-    image: "/images/team/tanvir.jpg",
-    bio: "Specialized in high-performance Next.js apps, scalable backends, and cloud infrastructure.",
+    name: "Jahedul Alam",
+    role: "Chief Operating Officer",
+    image: "/images/team/jahedul-alam.png",
+    bio: "Driving operational excellence, creative strategy, and user-centered digital experiences at Softilo, with expertise in UI/UX design and product innovation.",
+    portfolio: "https://jahedul-alam.vercel.app/",
     socialUrl: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com"
-    }
+      github: "",
+      linkedin: "https://www.linkedin.com/in/md-jahedul-alam-192227437",
+      twitter: "",
+    },
   },
+
   {
     id: "3",
-    name: "Ahsan Habib",
-    role: "Head of UI/UX & Design",
-    image: "/images/team/ahsan.jpg",
-    bio: "Crafting Awwwards-level digital experiences, immersive dark aesthetics, and brand identities.",
+    name: "Muntasir Mahmud",
+    role: "Full Stack Developer",
+    image: "/images/team/muntasir-mahmud.png",
+    bio: "Building scalable, high-performance web applications and seamless digital experiences through modern frontend and backend development at Softilo.",
     socialUrl: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    }
+      github: "https://github.com/muntasirtanjil",
+      linkedin: "https://www.linkedin.com/in/muntasir-mahmud-tanjil/",
+      twitter: "",
+    },
   },
   {
     id: "4",
@@ -55,7 +60,7 @@ export const teamData: TeamMember[] = [
     image: "/images/team/nusrat.jpg",
     bio: "Building autonomous workflows, smart chatbot pipelines, and enterprise automation systems.",
     socialUrl: {
-      linkedin: "https://linkedin.com"
-    }
-  }
+      linkedin: "https://linkedin.com",
+    },
+  },
 ];

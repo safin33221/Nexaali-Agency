@@ -4,6 +4,7 @@ export interface TeamMember {
   role: string;
   image: string;
   bio: string;
+  portfolio?: string;
   socialUrl: {
     linkedin?: string;
     twitter?: string;
@@ -16,12 +17,13 @@ export const teamData: TeamMember[] = [
     id: "1",
     name: "Safayet Hossan Safin",
     role: "Founder & CEO",
-    image: "/images/team/safin.jpg", // Apnar chobi ba placeholder use hobe
-    bio: "Leading software architectures, AI automations, and digital brand scaling at Softilo.",
+    image: "/images/team/safin.jpg",
+    bio: "Full Stack Developer & SaaS Builder. Leading software architectures, AI automations, and digital brand scaling at Softilo. Based in Chattogram, Bangladesh.",
+    portfolio: "https://safayet-hossan.vercel.app",
     socialUrl: {
-      linkedin: "https://linkedin.com",
-      github: "https://github.com",
-      twitter: "https://twitter.com"
+      linkedin: "https://linkedin.com/in/safayethossansafin",
+      github: "https://github.com/safin332211",
+      twitter: "https://x.com"
     }
   },
   {

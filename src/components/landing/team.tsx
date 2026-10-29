@@ -51,7 +51,7 @@ function XTwitterIcon({ className }: { className?: string }) {
 
 // Fallback high-res professional portraits if local /images/team/*.jpg is pending upload
 const fallbackImages: Record<string, string> = {
-  "1": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop", // Safin
+  "1": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop", // Safin (real photo: /images/team/safin.jpg)
   "2": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop", // Tanvir
   "3": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop", // Ahsan
   "4": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop", // Nusrat
@@ -217,10 +217,22 @@ function TeamMemberCard({ member, index }: { member: TeamMember; index: number }
               )}
             </div>
 
-            {/* Micro-interaction Corner Accent Indicator */}
-            <div className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-slate-400 backdrop-blur-md shadow-md transition-all duration-300 group-hover:border-violet-500/40 group-hover:bg-violet-500/20 group-hover:text-violet-300 group-hover:rotate-45">
-              <ArrowUpRight className="h-3.5 w-3.5" />
-            </div>
+            {/* Micro-interaction Corner Accent Indicator — links to portfolio if available */}
+            {member.portfolio ? (
+              <a
+                href={member.portfolio}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`${member.name}'s Portfolio`}
+                className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-slate-400 backdrop-blur-md shadow-md transition-all duration-300 group-hover:border-violet-500/40 group-hover:bg-violet-500/20 group-hover:text-violet-300 group-hover:rotate-45"
+              >
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </a>
+            ) : (
+              <div className="flex h-7 w-7 items-center justify-center rounded-full border border-white/10 bg-slate-950/80 text-slate-400 backdrop-blur-md shadow-md transition-all duration-300 group-hover:border-violet-500/40 group-hover:bg-violet-500/20 group-hover:text-violet-300 group-hover:rotate-45">
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </div>
+            )}
           </div>
         </div>
 
